@@ -6,6 +6,87 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Main site heading -->
+  <header>
+    <h1>My Personal Website</h1>
+    <p>Welcome! This site showcases my projects, experiences, and talents.</p>
+  </header>
+
+  <!-- Navigation bar for scrolling to sections -->
+  <nav>
+    <!-- Each button links to a section on the page -->
+    <button onclick="document.getElementById('personal-projects').scrollIntoView({behavior: 'smooth'});">Projects</button>
+    <button onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'});">Education</button>
+    <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});">Skills</button>
+  </nav>
+
+  <!-- Personal Projects section -->
+  <section id="personal-projects">
+    <h2>Projects</h2>
+    <!-- Each project is inside a card -->
+    <div class="card">
+      <!-- Make the project title a link -->
+      <h3>
+        <a href="https://github.com/rfrench3/scopebuddy-gui" target="_blank" style="color: inherit; text-decoration: underline;">
+          Scopebuddy-GUI
+        </a>
+      </h3>
+      <p>I created a Graphical User Interface for a program known as Scopebuddy, which significantly lowers the technical knowledge and confidence required by users.</p>
+    </div>
+    <div class="card">
+      <h3>This Website</h3>
+      <p>I created this website to show off my skills and accomplishments.</p>
+    </div>
+    <div class="card">
+      <h3>Arduino Robot</h3>
+      <p>I was the Hardware lead of a team that created a small Arduino Robot, and my role was to design it in TinkerCAD and assemble it.</p>
+    </div>
+    <!-- Add more project cards as you create more projects -->
+  </section>
+
+  <!-- Education section -->
+  <section id="education">
+    <h2>Education</h2>
+    <!-- Each education item is inside a card -->
+    <div class="card">
+      <h3>University of South Florida</h3>
+      <p>I am an Undergraduate at the University of South Florida currently pursuing a degree in Computer Engineering.</p>
+    </div>
+
+    <div class="card">
+      <h3>Global Career Accelerator - Web Development Course</h3>
+      <p>Details about your experience in the Global Career Accelerator program.</p>
+    </div>
+
+    <!-- Add more education cards as needed -->
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <!-- Each skill or group of skills is inside a card -->
+    <div class="card">
+      <h3>Python</h3>
+      <p>Experience with Python programming.</p>
+    </div>
+    <div class="card">
+      <h3>HTML</h3>
+      <p>Experience with HTML for building web pages.</p>
+    </div>
+    <div class="card">
+      <h3>CSS</h3>
+      <p>Experience with CSS for styling websites.</p>
+    </div>
+    <div class="card">
+      <h3>Qt</h3>
+      <p>Experience with designing user interfaces using Qt Designer.</p>
+    </div>
+    <div class="card">
+      <h3>Linux</h3>
+      <p>Experience with setting up Linux environments.</p>
+    </div>
+
+    <!-- Add more skill cards as you learn more skills -->
+  </section>
 </body>
 </html>

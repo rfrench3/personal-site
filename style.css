@@ -1,1 +1,101 @@
 /* Add you CSS here */
+
+/* Set a background image with a dark overlay for the whole page */
+body {
+  background-color: #181a1b; /* fallback dark background */
+  color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/hero-bg.jpg'); /* background image */
+  background-size: cover; /* cover the whole page */
+  background-position: center; /* center the image */
+  position: relative; /* needed for overlay */
+}
+
+/* Overlay for dark effect on background image */
+body::before {
+  content: "";
+  position: fixed; /* cover the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(24,26,27, 0.85); /* dark overlay */
+  z-index: -1; /* behind all content */
+  pointer-events: none; /* let clicks through */
+}
+
+/* Style the main heading and header for dark mode */
+header {
+  background-color: #22262a; /* darker header */
+  color: #f1f1f1; /* light text */
+  padding: 16px 10px; /* reduced padding for a smaller title bar */
+  text-align: center;
+}
+
+/* Style the navigation bar */
+nav {
+  display: flex; /* lay out buttons in a row */
+  justify-content: center; /* center the buttons */
+  gap: 12px; /* space between buttons */
+  background-color: #30353b; /* match section background */
+  padding: 10px 0; /* small padding above and below */
+  margin-bottom: 16px; /* space below nav bar */
+  border-radius: 0 0 8px 8px; /* rounded bottom corners */
+}
+
+/* Style the navigation buttons */
+nav button {
+  background-color: #2d3136; /* match card background */
+  color: #f1f1f1;
+  border: 1px solid #3a3f44;
+  border-radius: 4px;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+
+nav button:hover {
+  background-color: #3a3f44; /* slightly lighter on hover */
+}
+
+/* Add space around each section with dark backgrounds */
+section {
+  background-color: #23272b; /* dark gray for sections */
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); /* stronger shadow for dark mode */
+}
+
+/* Style for the cards inside each section for dark mode */
+.card {
+  background-color: #2d3136; /* slightly lighter dark for cards */
+  border: 1px solid #3a3f44; /* subtle border */
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+/* Style section headings */
+section h2 {
+  color: #7abaff; /* light blue for section titles */
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* Add a little space below paragraphs */
+section p {
+  margin-bottom: 0;
+}
+
+/* Add a little space below card headings */
+.card h3 {
+  color: #f1f1f1; /* keep card headings light */
+  margin-top: 0;
+  margin-bottom: 8px;
+}
