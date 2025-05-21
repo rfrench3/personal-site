@@ -1,4 +1,4 @@
-/* Add you CSS here */
+/* Add your CSS here */
 
 /* Set a background image with a dark overlay for the whole page */
 body {
@@ -98,4 +98,128 @@ section p {
   color: #f1f1f1; /* keep card headings light */
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+/* Make the welcome text in the header 1.5 times larger */
+.welcome-text {
+  font-size: 1.5em; /* 1.5 times the normal size */
+}
+
+/* Custom section with a new background */
+.bottom-section {
+  background-color: #3b3f5c; /* a different dark blue background */
+  color: #fff; /* white text for contrast */
+  margin: 0px auto;
+  padding: 24px;
+  max-width: 100%;
+  border-radius: 0px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Layout for the bottom section content */
+.bottom-content {
+  display: flex; /* lay out content and button in a row */
+  justify-content: space-between; /* space between text and button */
+  align-items: center;
+  gap: 16px;
+}
+
+/* Style for the "Back to Top" button */
+.to-top-btn {
+  background-color: #7abaff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 18px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.to-top-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Light theme styles for users who prefer light mode */
+@media (prefers-color-scheme: light) {
+  /* Set a light background color and dark text for the whole page */
+  body {
+    background-color: #f5f7fa; /* light background */
+    color: #22262a; /* dark text */
+    background-image: url('img/hero-bg.jpg'); /* keep background image */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Overlay for a light effect on background image */
+  body::before {
+    background: rgba(245,247,250, 0.15); /* much less opaque overlay */
+  }
+
+  /* Style the main heading and header for light mode */
+  header {
+    background-color: #3568ff; /* royal blue */
+    color: #f1f1f1; /* light text for contrast */
+  }
+
+  /* Make the navigation bar a deeper blue (but not deeper than the header) */
+  nav {
+    background-color: #5f9de9; /* deeper blue, lighter than header */
+  }
+
+  /* Style the navigation buttons */
+  nav button {
+    background-color: #e3eaf6; /* light button */
+    color: #22262a;
+    border: 1px solid #b6c6d6;
+  }
+
+  nav button:hover {
+    background-color: #cfe0f5; /* slightly darker on hover */
+  }
+
+  /* Style each section with a light background */
+  section {
+    background-color: #ffffff; /* white for sections */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* lighter shadow */
+    border: 1px solid #e3eaf6;
+  }
+
+  /* Style for the cards inside each section for light mode */
+  .card {
+    background-color: #5f9de9;
+    border: 1px solid #dbeafe;
+    color: #f1f1f1; /* light text for contrast */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  }
+
+  /* Style section headings */
+  section h2 {
+    color: #2563eb; /* blue for section titles */
+  }
+
+  /* Card headings */
+  .card h3 {
+    color: #ffffff; /* white card headings */
+  }
+
+  /* Make the welcome text in the header 1.5 times larger */
+  .welcome-text {
+    font-size: 1.5em; /* 1.5 times the normal size */
+  }
+
+  .bottom-section {
+    background-color: #3568ff; /* a light, warm background */
+    color: #22262a; /* dark text for contrast */
+  }
+
+  /* Light theme for the button */
+  .to-top-btn {
+    background-color: #2563eb;
+    color: #fff;
+  }
+  .to-top-btn:hover {
+    background-color: #7abaff;
+  }
 }
