@@ -127,7 +127,7 @@ section p {
 
 /* Style for the "Back to Top" button */
 .to-top-btn {
-  background-color: #7abaff;
+  background-color: #3e9bff;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -211,7 +211,6 @@ section p {
 
   .bottom-section {
     background-color: #3568ff; /* a light, warm background */
-    color: #22262a; /* dark text for contrast */
   }
 
   /* Light theme for the button */
