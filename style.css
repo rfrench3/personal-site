@@ -1,17 +1,25 @@
-/* Fix for hero section: ensure header is not sized by content only */
 header {
-  background: #2769a7;
+  /* Add a simple blue gradient background */
+  background: linear-gradient(135deg, #2769a7, #4791ca);
   width: 100%;
   padding: 3rem 0 2rem 0;
-  margin-bottom: 3rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   color: #fff;
+  margin-bottom: 0rem;
 }
 
 header img {
   max-width: 12rem;
   height: auto;
   border-radius: 50%;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+.navigator {
+  color: aqua;
 }
 
 .card {
