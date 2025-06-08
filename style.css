@@ -1,0 +1,15 @@
+.header {
+  /* Set a calm blue gradient background for a professional look */
+  /* Create a blue gradient background at a 45 degree angle */
+  background: linear-gradient(135deg, #2c3e50, #2b4660);
+  color: white;
+}
+
+.header img {
+  /* Make the image round */
+  border-radius: 50%;
+  /* Set a smaller width for the image */
+  width: 12rem;
+  /* Keep the height in proportion */
+  height: 12rem;
+}
