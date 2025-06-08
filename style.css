@@ -3,13 +3,35 @@
   /* Create a blue gradient background at a 45 degree angle */
   background: linear-gradient(135deg, #2c3e50, #2b4660);
   color: white;
+  /* Add space inside the header */
+  padding: 1rem;
 }
 
 .header img {
-  /* Make the image round */
   border-radius: 50%;
-  /* Set a smaller width for the image */
   width: 12rem;
-  /* Keep the height in proportion */
   height: 12rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+}
+
+.info-card {
+  background-color: rgb(179, 179, 179);
+  padding: 1rem;  
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 1rem;
+  display: block;
+}
+
+
+
+
+
+
+
+.bottom-bar {
+  background-color: rgba(0, 0, 0, 0.15);
 }
