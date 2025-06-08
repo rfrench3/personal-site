@@ -1,121 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- This script checks if the user prefers dark mode -->
-<script>
-  // Use matchMedia to check the user's color scheme preference
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    // User prefers dark mode
-    console.log('User prefers dark mode');
-  } else {
-    // User prefers light mode
-    console.log('User prefers light mode');
-  }
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert French</title>
+  <!-- Bootstrap RTL CSS (default to LTR, swap to RTL via JS) -->
+  <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Main site heading -->
-  <header>
-    <h1>My Personal Website</h1>
-    <!-- Profile picture as a circle -->
-    <img src="img/me_square.jpg" alt="My profile picture" style="display: block; margin: 0 auto; width: 120px; height: 120px; border-radius: 50%;">
-    <h2 class="welcome-text">Robert French</h2>
-    <p class="welcome-text">Welcome! This site showcases my projects, experiences, and talents.</p>
-  </header>
-
-  <!-- Navigation bar for scrolling to sections -->
-  <nav>
-    <!-- Each button links to a section on the page -->
-    <button onclick="document.getElementById('personal-projects').scrollIntoView({behavior: 'smooth'});">Projects</button>
-    <button onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'});">Education</button>
-    <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});">Skills</button>
-  </nav>
-
-  <!-- Personal Projects section -->
-  <section id="personal-projects">
-    <h2>Projects</h2>
-    <!-- Each project is inside a card -->
-    <div class="card">
-      <!-- Make the project title a link -->
-      <h3>
-        <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M280-400v-160l-80 80 80 80Zm200 120 80-80H400l80 80Zm-80-320h160l-80-80-80 80Zm280 200 80-80-80-80v160ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg> <a href="https://github.com/rfrench3/scopebuddy-gui" target="_blank" style="color: inherit; text-decoration: underline;">
-          Scopebuddy-GUI
-        </a>
-      </h3>
-      <p>I created a Graphical User Interface for a program known as Scopebuddy, providing a convenient way to use a tool that otherwise requires to users to be able to locate and properly edit config files.
-        
-      </p>
-    </div>
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg> This Website</h3>
-      <p>I created this website to show off my skills and accomplishments.</p>
-    </div>
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M160-360q-50 0-85-35t-35-85q0-50 35-85t85-35v-80q0-33 23.5-56.5T240-760h120q0-50 35-85t85-35q50 0 85 35t35 85h120q33 0 56.5 23.5T800-680v80q50 0 85 35t35 85q0 50-35 85t-85 35v160q0 33-23.5 56.5T720-120H240q-33 0-56.5-23.5T160-200v-160Zm200-80q25 0 42.5-17.5T420-500q0-25-17.5-42.5T360-560q-25 0-42.5 17.5T300-500q0 25 17.5 42.5T360-440Zm240 0q25 0 42.5-17.5T660-500q0-25-17.5-42.5T600-560q-25 0-42.5 17.5T540-500q0 25 17.5 42.5T600-440ZM320-280h320v-80H320v80Zm-80 80h480v-480H240v480Zm240-240Z"/></svg> Arduino Robot</h3>
-      <p>I was the Hardware lead of a team that created a small Arduino Robot, and my role was to design it in TinkerCAD and assemble it.</p>
-    </div>
-    <!-- Add more project cards as you create more projects -->
-  </section>
-
-  <!-- Education section -->
-  <section id="education">
-    <h2>Education</h2>
-    <!-- Each education item is inside a card -->
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/></svg> University of South Florida</h3>
-      <p>I am an Undergraduate at the University of South Florida currently pursuing a degree in Computer Engineering.</p>
-    </div>
-
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/></svg> Global Career Accelerator - Web Development Course</h3>
-      <p>I learned how to develop my own website and how to effectively use AI too.</p>
-    </div>
-
-    <!-- Add more education cards as needed -->
-  </section>
-
-  <!-- Skills section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <!-- Each skill or group of skills is inside a card -->
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg> Python</h3>
-      <p>Experience with Python programming.</p>
-    </div>
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z"/></svg> HTML</h3>
-      <p>Experience with HTML for building web pages.</p>
-    </div>
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M420-360q-17 0-28.5-11.5T380-400v-40h60v20h80v-40H420q-17 0-28.5-11.5T380-500v-60q0-17 11.5-28.5T420-600h120q17 0 28.5 11.5T580-560v40h-60v-20h-80v40h100q17 0 28.5 11.5T580-460v60q0 17-11.5 28.5T540-360H420Zm260 0q-17 0-28.5-11.5T640-400v-40h60v20h80v-40H680q-17 0-28.5-11.5T640-500v-60q0-17 11.5-28.5T680-600h120q17 0 28.5 11.5T840-560v40h-60v-20h-80v40h100q17 0 28.5 11.5T840-460v60q0 17-11.5 28.5T800-360H680Zm-520 0q-17 0-28.5-11.5T120-400v-160q0-17 11.5-28.5T160-600h120q17 0 28.5 11.5T320-560v40h-60v-20h-80v120h80v-20h60v40q0 17-11.5 28.5T280-360H160Z"/></svg> CSS</h3>
-      <p>Experience with CSS for styling websites.</p>
-    </div>
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T320-280q0-17-11.5-28.5T280-320q-17 0-28.5 11.5T240-280q0 23-5.5 42T220-202q5 2 10 2h10Zm230-160L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Zm-190 80Z"/></svg> Qt</h3>
-      <p>Experience with designing user interfaces using Qt Designer.</p>
-    </div>
-    <div class="card">
-      <h3><svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 -960 960 960" width="1.5rem" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"/></svg> Linux</h3>
-      <p>Experience with setting up Linux environments.</p>
-    </div>
-
-    <!-- Add more skill cards as you learn more skills -->
-  </section>
-  <!-- New section with a different background -->
-  <section class="bottom-section">
-    <div class="bottom-content">
-      <div>
-        <p><a href="https://linkedin.com/in/robert-french-teal-mango" target="_blank" style="color: inherit; text-decoration: underline;">LinkedIn</a></p>
-        <p><a href="https://github.com/rfrench3/" target="_blank" style="color: inherit; text-decoration: underline;">GitHub</a></p>
+  <!-- Header  -->
+  <header class="mb-5">
+    <div class="container">
+      <div class="text-center">
+        <h1>My Personal Website</h1>
+        <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera">
+        <h2>Robert French</h2>
+        <p>Welcome! This site showcases my <a href="#projects" class="navigator">projects</a>, <a href="#skills" class="navigator">skills</a>, and <a href="#education" class="navigator">education</a>.</p>
       </div>
-      <!-- Button to scroll to the top of the page -->
-      <button class="to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-        Back to Top
-      </button>
     </div>
-  </section>
+  </header>
+  
+  <!-- Information Sections  -->
+  <div class="container">
+    <!-- Projects  -->
+    <h2 class="text-center" id="projects">Projects</h2>
+    <hr>
+    <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Scopebuddy GUI</h2>
+            <p class="card-text">
+              I created a Graphical User Interface for a program known as Scopebuddy, providing a convenient way to use a tool that otherwise requires users to be able to locate and properly edit config files.
+              <a href="https://github.com/rfrench3/scopebuddy-gui">Here!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">This Website</h2>
+            <p class="card-text">
+              I created this website to show off my skills and accomplishments. It demonstrates my ability to make a website that is simple, maintainable, and easy to use with accessibility tools such as screen readers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Arduino Robot</h2>
+            <p class="card-text">
+              I was the Hardware lead of a team that created a small Arduino Robot, and my role was to design it in TinkerCAD and assemble it. I am familiar with 3D printing and CAD software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Skills  -->
+    <h2 class="text-center" id="skills">Skills</h2>
+    <hr>
+    <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Python</h2>
+            <p class="card-text">
+              I have made a fully-functional GUI application using Python.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">HTML</h2>
+            <p class="card-text">
+              I am familiar with HTML and can use it effectively.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">CSS</h2>
+            <p class="card-text">
+              I am familiar with CSS and can use it to create visually appealing websites, capable of running well even on low-end mobile hardware.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Bootstrap-CSS</h2>
+            <p class="card-text">
+              I am able to use Bootstrap-CSS to make mobile-first websites that look and feel excellent on all screens, from small phones to large televisions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Linux</h2>
+            <p class="card-text">
+              I am familiar with Linux from heavy personal usage, and can effectively troubleshoot and work with it.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Qt</h2>
+            <p class="card-text">
+              I use Qt to develop helpful lightweight applications for the desktop Linux ecosystem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">3D Printing</h2>
+            <p class="card-text">
+              I am familiar with the process of 3d printing, from brainstorming the design to making the final print.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Teamwork</h2>
+            <p class="card-text">
+              I work very well in small teams. I fulfill my role and help encourage others to do the same.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">CAD Software</h2>
+            <p class="card-text">
+              I am capable of designing and modelling 3d models using CAD software such as AutoDesk TinkerCAD.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Education  -->
+    <h2 class="text-center" id="education">Education</h2>
+    <hr>
+    <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">National Merit Scholar</h2>
+            <p class="card-text">
+              My academic talent and achievements have resulted in me earning the National Merit Scholarship. Over a million students across the United States compete for this scholarship every year, and under ten thousand are selected to recieve it.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">University of South Florida</h2>
+            
+            <p class="card-text">
+              I am an Undergraduate at the University of South Florida currently pursuing a degree in Computer Engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title h5">Global Career Accelerator - Web Development Course</h2>
+            <p class="card-text">
+              I learned how to develop my own visually striking websites using tools such as bootstrap. I also learned how to effectively use AI tools, allowing for rapid progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>  
+  <!-- Footer, outside the .container so it stretches full width -->
+  <footer class="bg-light border-top py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-2 mb-md-0 text-muted small">
+        <a href="#" class="text-decoration-none text-muted mx-2">Robert French</a>
+      </div>
+      <nav>
+        <!-- Add a button to open the modal -->
+        <a href="#" class="text-decoration-none text-muted mx-2">GitHub</a>
+        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" class="text-decoration-none text-muted mx-2">LinkedIn</a>
+        <a href="#" class="text-decoration-none text-muted mx-2" data-bs-toggle="modal" data-bs-target="#infoModal">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- bootstrap Modal window -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal header with a close button -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Contact Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Modal body with some example text -->
+        <div class="modal-body text-center">
+          <!-- You can put any information here -->
+          <p>Feel free to contact me through <a href="https://www.linkedin.com/in/robert-french-teal-mango/">LinkedIn</a>. </p>
+          <p>I can also be contacted through my email, rmfrench@protonmail.com.</p>
+        </div>
+        <!-- Modal footer with a close button -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- RTL/LTR Auto-Detection Script -->
+  <script>
+    const rtlCss = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css";
+    const ltrCss = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+    const html = document.documentElement;
+    const bootstrapCss = document.getElementById('bootstrap-css');
+
+    // List of RTL language codes
+    const rtlLangs = [
+      'ar', 'he', 'fa', 'ur', 'ps', 'syr', 'dv', 'ku', 'yi'
+    ];
+
+    function isRtlLang(lang) {
+      return rtlLangs.some(rtl => lang.toLowerCase().startsWith(rtl));
+    }
+
+    function setDirectionByLanguage(lang) {
+      if (isRtlLang(lang)) {
+        html.setAttribute('dir', 'rtl');
+        bootstrapCss.setAttribute('href', rtlCss);
+      } else {
+        html.setAttribute('dir', 'ltr');
+        bootstrapCss.setAttribute('href', ltrCss);
+      }
+      html.setAttribute('lang', lang);
+    }
+
+    // On page load, auto-detect
+    setDirectionByLanguage(navigator.language || navigator.userLanguage);
+
+    // Detect language changes post-load (e.g., by translation tools)
+    let lastLang = html.getAttribute('lang') || (navigator.language || navigator.userLanguage);
+
+    const observer = new MutationObserver(() => {
+      const currentLang = html.getAttribute('lang');
+      if (currentLang && currentLang !== lastLang) {
+        setDirectionByLanguage(currentLang);
+        lastLang = currentLang;
+      }
+    });
+
+    observer.observe(html, { attributes: true, attributeFilter: ['lang'] });
+  </script>
 </body>
 </html>
