@@ -1,41 +1,45 @@
 header {
-  /* Add a simple blue gradient background */
   background: linear-gradient(135deg, #2769a7, #4791ca);
   width: 100%;
-  padding: 3rem 0 2rem 0;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
   color: #fff;
-  margin-bottom: 0rem;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-header img {
+  a:hover {
+    color: #00d9ff;
+  }
+
+  img {
   max-width: 12rem;
   height: auto;
   border-radius: 50%;
-}
+  }
 
-header p {
-  font-size: 1.5rem;
+  p {
+    font-size: 1.5rem;
+  } 
 }
 
 .navigator {
-  color: aqua;
+  padding: 1rem 0 1rem 0;
+  background: #00000016;
+
+  a {
+  background: #0000002d;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  }
 }
 
 .card {
   background: whitesmoke;
-}
-
-
-/* RTL support for text alignment */
-html[dir="rtl"] .text-center {
-  text-align: right;
-}
-html[dir="rtl"] .text-end {
-  text-align: left;
-}
-html[dir="rtl"] .text-start {
-  text-align: right;
 }
 
 /* RTL: align all content to the right */
