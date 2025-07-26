@@ -4,65 +4,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robert French</title>
-  <!-- Bootstrap RTL CSS (default to LTR, swap to RTL via JS) -->
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header  -->
-  <header class="mb-5">
-    <div class="container">
-      <div class="text-center">
-        <h1>My Personal Website</h1>
-        <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera">
-        <h2>Robert French</h2>
-        <p>Welcome! This site showcases my <a href="#projects" class="navigator">projects</a>, <a href="#skills" class="navigator">skills</a>, and <a href="#education" class="navigator">education</a>.</p>
+  <header class="text-center">
+    <div class="mb-4 d-flex flex-column flex-md-row align-items-center justify-content-center">
+      <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" class="mb-3 mb-md-0 me-0 me-md-4">
+      <div>
+        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" class="text-decoration-none">
+          <h2>Robert French, Web Developer</h2>
+          <p>Responsive and accessible design</p>
+        </a>
       </div>
     </div>
+    
+    <nav class="text-center navigator">
+      <a href="#projects" class="btn btn-outline-light btn-sm">Projects</a>
+      <a href="#skills" class="btn btn-outline-light btn-sm">Skills</a>
+      <a href="#education" class="btn btn-outline-light btn-sm">Education</a>
+    </nav>
   </header>
-  
-  <!-- Information Sections  -->
-  <div class="container">
-    <!-- Projects  -->
-    <h2 class="text-center" id="projects">Projects</h2>
-    <hr>
-    <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">Scopebuddy GUI</h2>
-            <p class="card-text">
-              I created a Graphical User Interface for a program known as Scopebuddy, providing a convenient way to use a tool that otherwise requires users to be able to locate and properly edit config files.
-              <a href="https://github.com/rfrench3/scopebuddy-gui">Here!</a>
-            </p>
+
+  <main class="container">
+    <section id="projects">
+      <h2 class="text-center">Projects</h2>
+      <hr>
+      <div class="row row-cols-1 row-cols-md-3 mb-5 g-4">
+        <div class="col">
+          <a href="https://github.com/rfrench3/scopebuddy-gui" class="text-decoration-none" style="color: inherit; text-decoration: none;">
+            <div class="card h-100" style="cursor: pointer;">
+              <div class="card-body">
+                <h2 class="card-title h5">
+                  Scopebuddy GUI
+                </h2>
+                <p class="card-text">
+                  I created a Graphical User Interface for a program known as Scopebuddy, 
+                  providing a convenient way to use a tool that otherwise requires users 
+                  to be able to locate and properly edit config files.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title h5">
+                Portfolio Website
+              </h2>
+              <p class="card-text"></p>
+                I created this website to show off my skills and accomplishments. 
+                It demonstrates my ability to make a website that is simple, responsive, maintainable, 
+                and easy to use with accessibility tools such as screen readers.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">This Website</h2>
-            <p class="card-text">
-              I created this website to show off my skills and accomplishments. It demonstrates my ability to make a website that is simple, maintainable, and easy to use with accessibility tools such as screen readers.
-            </p>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title h5">
+                Arduino Robot
+              </h2>
+              <p class="card-text">
+                I was the Hardware lead of a team that created a small Arduino Robot, 
+                and my role was to design it in TinkerCAD and assemble it. 
+                I am familiar with 3D printing and CAD software.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">Arduino Robot</h2>
-            <p class="card-text">
-              I was the Hardware lead of a team that created a small Arduino Robot, and my role was to design it in TinkerCAD and assemble it. I am familiar with 3D printing and CAD software.
-            </p>
-          </div>
+        <div class="col">
+          <a href="https://rfrench3.github.io/scopebuddy-gui/" class="text-decoration-none" style="color: inherit;">
+            <div class="card h-100" style="cursor: pointer;">
+              <div class="card-body">
+                <h2 class="card-title h5">
+                  ScopeBuddy GUI Docs
+                </h2>
+                <p class="card-text">
+                  I designed a documentation website that provides additional information for users of my ScopeBuddy GUI App. 
+                  It also has a dedicated web-app that closely mirrors the desktop app's functionality.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://rfrench3.github.io/03-prj-intel-localization/" class="text-decoration-none" style="color: inherit;">
+            <div class="card h-100" style="cursor: pointer;">
+              <div class="card-body">
+                <h2 class="card-title h5">
+                  GCA - Intel Timeline Webpage
+                </h2>
+                <p class="card-text">
+                  I developed a website that responsively adapts to any size of screen
+                  while also having excellent support for accessibility tools such as screen readers. 
+                  It also automatically re-orders itself to properly display right-to-left languages.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://rfrench3.github.io/08-prj-loreal-chatbot/" class="text-decoration-none" style="color: inherit;">
+            <div class="card h-100" style="cursor: pointer;">
+              <div class="card-body">
+                <h2 class="card-title h5">
+                  GCA - Secure AI-powered Chatbot
+                </h2>
+                <p class="card-text">
+                  I securely deployed an AI-powered chatbot using a Cloudflare Worker and the OpenAI API
+                  to help customers with questions exclusively about L'Oréal products.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Note: If the chatbot does not respond, it is likely due to insufficient OpenAI credits.</small>
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
-  <!-- Skills  -->
-    <h2 class="text-center" id="skills">Skills</h2>
-    <hr>
-    <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+
+    <section id="skills">
+      <h2 class="text-center">Skills</h2>
+      <hr>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
       <div class="col">
         <div class="card h-100">
           <div class="card-body">
@@ -78,7 +155,8 @@
           <div class="card-body">
             <h2 class="card-title h5">HTML</h2>
             <p class="card-text">
-              I am familiar with HTML and can use it effectively.
+              I have constructed a wide variety of HTML-based websites for personal projects as well as
+              the Global Career Accelerator.
             </p>
           </div>
         </div>
@@ -88,7 +166,8 @@
           <div class="card-body">
             <h2 class="card-title h5">CSS</h2>
             <p class="card-text">
-              I am familiar with CSS and can use it to create visually appealing websites, capable of running well even on low-end mobile hardware.
+              I am familiar with CSS and can use it to create visually appealing websites, 
+              capable of running well even on low-end mobile hardware.
             </p>
           </div>
         </div>
@@ -98,7 +177,8 @@
           <div class="card-body">
             <h2 class="card-title h5">Bootstrap-CSS</h2>
             <p class="card-text">
-              I am able to use Bootstrap-CSS to make mobile-first websites that look and feel excellent on all screens, from small phones to large televisions.
+              I am able to use Bootstrap-CSS to make mobile-first websites that look and feel excellent on all screens, 
+              from small phones to large televisions.
             </p>
           </div>
         </div>
@@ -148,23 +228,26 @@
           <div class="card-body">
             <h2 class="card-title h5">CAD Software</h2>
             <p class="card-text">
-              I am capable of designing and modelling 3d models using CAD software such as AutoDesk TinkerCAD.
+              I can design and create 3d models using CAD software such as AutoDesk TinkerCAD.
             </p>
           </div>
         </div>
       </div>
+    </div>
     </section>
-
-  <!-- Education  -->
-    <h2 class="text-center" id="education">Education</h2>
-    <hr>
-    <section class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    
+    <section id="education">
+      <h2 class="text-center">Education</h2>
+      <hr>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
       <div class="col">
         <div class="card h-100">
           <div class="card-body">
             <h2 class="card-title h5">National Merit Scholar</h2>
             <p class="card-text">
-              My academic talent and achievements have resulted in me earning the National Merit Scholarship. Over a million students across the United States compete for this scholarship every year, and under ten thousand are selected to recieve it.
+              My academic talent and achievements have resulted in me earning the National Merit Scholarship. 
+              Over a million students across the United States compete for this scholarship every year, 
+              and under ten thousand are selected to recieve it.
             </p>
           </div>
         </div>
@@ -185,24 +268,25 @@
           <div class="card-body">
             <h2 class="card-title h5">Global Career Accelerator - Web Development Course</h2>
             <p class="card-text">
-              I learned how to develop my own visually striking websites using tools such as bootstrap. I also learned how to effectively use AI tools, allowing for rapid progress.
+              I developed visually striking websites using tools such as bootstrap. I effectively used AI tools to rapidly speed up development.
             </p>
           </div>
         </div>
       </div>
+    </div>
     </section>
-  </div>  
+  </main>  
   <!-- Footer, outside the .container so it stretches full width -->
   <footer class="bg-light border-top py-4 mt-5">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div class="mb-2 mb-md-0 text-muted small">
-        <a href="#" class="text-decoration-none text-muted mx-2">Robert French</a>
+        <a href="#" class="text-decoration-none text-muted mx-2 btn">Return to top</a>
       </div>
       <nav>
         <!-- Add a button to open the modal -->
-        <a href="#" class="text-decoration-none text-muted mx-2">GitHub</a>
-        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" class="text-decoration-none text-muted mx-2">LinkedIn</a>
-        <a href="#" class="text-decoration-none text-muted mx-2" data-bs-toggle="modal" data-bs-target="#infoModal">Contact</a>
+        <a href="https://github.com/rfrench3" class="text-decoration-none text-muted mx-2 btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" class="text-decoration-none text-muted mx-2 btn">LinkedIn</a>
+        <a href="#" class="text-decoration-none text-muted mx-2 btn" data-bs-toggle="modal" data-bs-target="#infoModal">Contact</a>
       </nav>
     </div>
   </footer>
@@ -220,7 +304,7 @@
         <div class="modal-body text-center">
           <!-- You can put any information here -->
           <p>Feel free to contact me through <a href="https://www.linkedin.com/in/robert-french-teal-mango/">LinkedIn</a>. </p>
-          <p>I can also be contacted through my email, rmfrench@protonmail.com.</p>
+          <p>I can also be contacted through my email, rmfrench704@gmail.com.</p>
         </div>
         <!-- Modal footer with a close button -->
         <div class="modal-footer">
