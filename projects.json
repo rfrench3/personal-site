@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Arduino Robot",
+        "content": "I was the Hardware lead of a team that created a small Arduino Robot, and my role was to design it in TinkerCAD, 3d print it, and assemble it.",
+        "category": "University of South Florida",
+        "link": "",
+        "start_Myyyy": "Dec2024",
+        "end_Myyyy": "Dec2024"
+    },
+    {
+        "title": "Scopebuddy GUI",
+        "content": "I created a Graphical User Interface for a program known as Scopebuddy, providing a convenient way to use a tool that otherwise requires users to be able to locate and properly edit config files.",
+        "category": "Personal Project",
+        "link": "https://github.com/rfrench3/scopebuddy-gui",
+        "start_Myyyy": "Jun2025",
+        "end_Myyyy": ""
+    },
+    {
+        "title": "Responsive Intel Timeline",
+        "content": "I developed a website that responsively adapts to any size of screen while also having excellent support for accessibility tools such as screen readers. It also automatically re-orders itself to properly display right-to-left languages.",
+        "category": "Global Career Accelerator",
+        "link": "https://rfrench3.github.io/03-prj-intel-localization/",
+        "start_Myyyy": "Jul2025",
+        "end_Myyyy": "Jul2025"
+    },
+    {
+        "title": "Secure AI Assistant",
+        "content": "I securely deployed an AI-powered chatbot using a Cloudflare Worker and the OpenAI API to help customers with questions exclusively about L'Oréal products.",
+        "category": "Global Career Accelerator",
+        "link": "https://rfrench3.github.io/08-prj-loreal-chatbot/",
+        "start_Myyyy": "Jul2025",
+        "end_Myyyy": "Jul2025"
+    },
+    {
+        "title": "Hackjam",
+        "content": "My team got first place in the category for worst-designed login screen. We used our understanding of the real goal (submit a funny video) to implement only features that would show up well on a video.",
+        "category": "University of South Florida",
+        "link": "",
+        "start_Myyyy": "Nov2025",
+        "end_Myyyy": "Nov2025"
+    },
+    {
+        "title": "Bazzite Updater",
+        "content": "I am creating a GUI system update application for Bazzite. It has full SDL3 controller support and will allow updating, rebasing, and rolling back updates.",
+        "category": "Personal Project",
+        "link": "https://github.com/rfrench3/bazzite_updater",
+        "start_Myyyy": "Dec2026",
+        "end_Myyyy": ""
+    }
+]

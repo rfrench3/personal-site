@@ -37,101 +37,73 @@
 
   <main class="container">
     <section id="projects">
+
       <h2 class="text-center">Projects</h2>
       <hr>
-      <div class="row row-cols-1 row-cols-md-3 mb-5 g-4">
-        <div class="col">
-          <a href="https://github.com/rfrench3/scopebuddy-gui" class="text-decoration-none" style="color: inherit; text-decoration: none;">
-            <div class="card h-100" style="cursor: pointer;">
-              <div class="card-body">
-                <h2 class="card-title h5">
-                  Scopebuddy GUI
-                </h2>
-                <p class="card-text">
-                  I created a Graphical User Interface for a program known as Scopebuddy, 
-                  providing a convenient way to use a tool that otherwise requires users 
-                  to be able to locate and properly edit config files.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col">
+
+      <script id="load-projects">
+        // Fetch and load projects from projects.json
+        fetch('projects.json')
+          .then(response => response.json())
+          .then(projects => {
+            const container = document.querySelector('#projects .row');
+
+            document.getElementById("js-remove")?.remove();
+            
+            projects.forEach(project => {
+              const col = document.createElement('div');
+              col.className = 'col';
+              
+              const card = document.createElement('div');
+              card.className = 'card h-100';
+              
+              const cardBody = document.createElement('div');
+              cardBody.className = 'card-body';
+              
+              const title = document.createElement('h2');
+              title.className = 'card-title h5';
+              title.textContent = project.title;
+              
+              const content = document.createElement('p');
+              content.className = 'card-text';
+              content.textContent = project.content;
+              
+              cardBody.appendChild(title);
+              cardBody.appendChild(content);
+              card.appendChild(cardBody);
+              
+              // If there's a link, wrap the card in an anchor tag
+              if (project.link) {
+                const link = document.createElement('a');
+                link.href = project.link;
+                link.className = 'text-decoration-none';
+                link.style.color = 'inherit';
+                link.appendChild(card);
+                card.style.cursor = 'pointer';
+                col.appendChild(link);
+              } else {
+                col.appendChild(card);
+              }
+              
+              container.appendChild(col);
+            });
+          })
+          .catch(error => console.error('Error loading projects:', error));
+      </script>
+
+      
+      <div class="row row-cols-1 row-cols-md-3 mb-5 g-4" id="load-projects">
+        <div class="col" id="js-remove">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title h5">
-                Portfolio Website
-              </h2>
-              <p class="card-text"></p>
-                I created this website to show off my skills and accomplishments. 
-                It demonstrates my ability to make a website that is simple, responsive, maintainable, 
-                and easy to use with accessibility tools such as screen readers.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title h5">
-                Arduino Robot
+                Loading...
               </h2>
               <p class="card-text">
-                I was the Hardware lead of a team that created a small Arduino Robot, 
-                and my role was to design it in TinkerCAD and assemble it. 
-                I am familiar with 3D printing and CAD software.
+                Projects list is loading...
               </p>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <a href="https://rfrench3.github.io/scopebuddy-gui/" class="text-decoration-none" style="color: inherit;">
-            <div class="card h-100" style="cursor: pointer;">
-              <div class="card-body">
-                <h2 class="card-title h5">
-                  ScopeBuddy GUI Docs
-                </h2>
-                <p class="card-text">
-                  I designed a documentation website that provides additional information for users of my ScopeBuddy GUI App. 
-                  It also has a dedicated web-app that closely mirrors the desktop app's functionality.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://rfrench3.github.io/03-prj-intel-localization/" class="text-decoration-none" style="color: inherit;">
-            <div class="card h-100" style="cursor: pointer;">
-              <div class="card-body">
-                <h2 class="card-title h5">
-                  GCA - Intel Timeline Webpage
-                </h2>
-                <p class="card-text">
-                  I developed a website that responsively adapts to any size of screen
-                  while also having excellent support for accessibility tools such as screen readers. 
-                  It also automatically re-orders itself to properly display right-to-left languages.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://rfrench3.github.io/08-prj-loreal-chatbot/" class="text-decoration-none" style="color: inherit;">
-            <div class="card h-100" style="cursor: pointer;">
-              <div class="card-body">
-                <h2 class="card-title h5">
-                  GCA - Secure AI-powered Chatbot
-                </h2>
-                <p class="card-text">
-                  I securely deployed an AI-powered chatbot using a Cloudflare Worker and the OpenAI API
-                  to help customers with questions exclusively about L'Oréal products.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Note: If the chatbot does not respond, it is likely due to insufficient OpenAI credits.</small>
-                </p>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </section>
@@ -283,7 +255,7 @@
         <a href="#" class="text-decoration-none text-muted mx-2 btn">Return to top</a>
       </div>
       <nav>
-        <!-- Add a button to open the modal -->
+        <a class="text-decoration-none text-muted mx-2 btn">Dialog</a>
         <a href="https://github.com/rfrench3" class="text-decoration-none text-muted mx-2 btn">GitHub</a>
         <a href="https://www.linkedin.com/in/robert-french-teal-mango/" class="text-decoration-none text-muted mx-2 btn">LinkedIn</a>
         <a href="#" class="text-decoration-none text-muted mx-2 btn" data-bs-toggle="modal" data-bs-target="#infoModal">Contact</a>
@@ -313,6 +285,14 @@
       </div>
     </div>
   </div>
+
+  <dialog>
+    <h1>dialog header</h1>
+    <p>dialog paragraph</p>
+    <form method="dialog">
+      <button>Close</button>
+    </form>
+  </dialog>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- RTL/LTR Auto-Detection Script -->
@@ -358,5 +338,6 @@
 
     observer.observe(html, { attributes: true, attributeFilter: ['lang'] });
   </script>
+
 </body>
 </html>
