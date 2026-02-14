@@ -22,7 +22,7 @@
       <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" class="mb-3 mb-md-0 me-0 me-md-4">
       <div>
         <a href="https://www.linkedin.com/in/robert-french-teal-mango/" class="text-decoration-none">
-          <h2>Robert French, Web Developer</h2>
+          <h2>Robert French, App and Web Developer</h2>
           <p>Responsive and accessible design</p>
         </a>
       </div>
@@ -97,10 +97,10 @@
           <div class="card h-100">
             <div class="card-body">
               <h2 class="card-title h5">
-                Loading...
+                Projects Loading...
               </h2>
               <p class="card-text">
-                Projects list is loading...
+                (or javascript is disabled!)
               </p>
             </div>
           </div>
@@ -111,96 +111,52 @@
     <section id="skills">
       <h2 class="text-center">Skills</h2>
       <hr>
+
+      <script id="load-skills">
+        // Fetch and load skills from skills.json
+        fetch('skills.json')
+          .then(response => response.json())
+          .then(skills => {
+            const container = document.querySelector('#skills .row');
+            
+            document.getElementById("js-remove-skills")?.remove();
+            
+            skills.forEach(skill => {
+              const col = document.createElement('div');
+              col.className = 'col';
+              
+              const card = document.createElement('div');
+              card.className = 'card h-100';
+              
+              const cardBody = document.createElement('div');
+              cardBody.className = 'card-body';
+              
+              const title = document.createElement('h2');
+              title.className = 'card-title h5';
+              title.textContent = skill.title;
+              
+              const content = document.createElement('p');
+              content.className = 'card-text';
+              content.textContent = skill.content;
+              
+              cardBody.appendChild(title);
+              cardBody.appendChild(content);
+              card.appendChild(cardBody);
+              col.appendChild(card);
+              
+              container.appendChild(col);
+            });
+          })
+          .catch(error => console.error('Error loading skills:', error));
+      </script>
+
     <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-      <div class="col">
+      <div class="col" id="js-remove-skills">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title h5">Python</h2>
+            <h2 class="card-title h5">Loading...</h2>
             <p class="card-text">
-              I have made a fully-functional GUI application using Python.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">HTML</h2>
-            <p class="card-text">
-              I have constructed a wide variety of HTML-based websites for personal projects as well as
-              the Global Career Accelerator.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">CSS</h2>
-            <p class="card-text">
-              I am familiar with CSS and can use it to create visually appealing websites, 
-              capable of running well even on low-end mobile hardware.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">Bootstrap-CSS</h2>
-            <p class="card-text">
-              I am able to use Bootstrap-CSS to make mobile-first websites that look and feel excellent on all screens, 
-              from small phones to large televisions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">Linux</h2>
-            <p class="card-text">
-              I am familiar with Linux from heavy personal usage, and can effectively troubleshoot and work with it.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">Qt</h2>
-            <p class="card-text">
-              I use Qt to develop helpful lightweight applications for the desktop Linux ecosystem.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">3D Printing</h2>
-            <p class="card-text">
-              I am familiar with the process of 3d printing, from brainstorming the design to making the final print.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">Teamwork</h2>
-            <p class="card-text">
-              I work very well in small teams. I fulfill my role and help encourage others to do the same.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">CAD Software</h2>
-            <p class="card-text">
-              I can design and create 3d models using CAD software such as AutoDesk TinkerCAD.
+              Skills list is loading...
             </p>
           </div>
         </div>
@@ -211,36 +167,52 @@
     <section id="education">
       <h2 class="text-center">Education</h2>
       <hr>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">National Merit Scholar</h2>
-            <p class="card-text">
-              My academic talent and achievements have resulted in me earning the National Merit Scholarship. 
-              Over a million students across the United States compete for this scholarship every year, 
-              and under ten thousand are selected to recieve it.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title h5">University of South Florida</h2>
+
+      <script id="load-education">
+        // Fetch and load education from education.json
+        fetch('education.json')
+          .then(response => response.json())
+          .then(education => {
+            const container = document.querySelector('#education .row');
             
-            <p class="card-text">
-              I am an Undergraduate at the University of South Florida currently pursuing a degree in Computer Engineering.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
+            document.getElementById("js-remove-education")?.remove();
+            
+            education.forEach(item => {
+              const col = document.createElement('div');
+              col.className = 'col';
+              
+              const card = document.createElement('div');
+              card.className = 'card h-100';
+              
+              const cardBody = document.createElement('div');
+              cardBody.className = 'card-body';
+              
+              const title = document.createElement('h2');
+              title.className = 'card-title h5';
+              title.textContent = item.title;
+              
+              const content = document.createElement('p');
+              content.className = 'card-text';
+              content.textContent = item.content;
+              
+              cardBody.appendChild(title);
+              cardBody.appendChild(content);
+              card.appendChild(cardBody);
+              col.appendChild(card);
+              
+              container.appendChild(col);
+            });
+          })
+          .catch(error => console.error('Error loading education:', error));
+      </script>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+      <div class="col" id="js-remove-education">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title h5">Global Career Accelerator - Web Development Course</h2>
+            <h2 class="card-title h5">Loading...</h2>
             <p class="card-text">
-              I developed visually striking websites using tools such as bootstrap. I effectively used AI tools to rapidly speed up development.
+              Education list is loading...
             </p>
           </div>
         </div>
@@ -248,14 +220,13 @@
     </div>
     </section>
   </main>  
-  <!-- Footer, outside the .container so it stretches full width -->
+  
   <footer class="bg-light border-top py-4 mt-5">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div class="mb-2 mb-md-0 text-muted small">
         <a href="#" class="text-decoration-none text-muted mx-2 btn">Return to top</a>
       </div>
       <nav>
-        <a class="text-decoration-none text-muted mx-2 btn">Dialog</a>
         <a href="https://github.com/rfrench3" class="text-decoration-none text-muted mx-2 btn">GitHub</a>
         <a href="https://www.linkedin.com/in/robert-french-teal-mango/" class="text-decoration-none text-muted mx-2 btn">LinkedIn</a>
         <a href="#" class="text-decoration-none text-muted mx-2 btn" data-bs-toggle="modal" data-bs-target="#infoModal">Contact</a>
@@ -267,32 +238,24 @@
   <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <!-- Modal header with a close button -->
+        
         <div class="modal-header">
           <h5 class="modal-title" id="infoModalLabel">Contact Information</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <!-- Modal body with some example text -->
+        
         <div class="modal-body text-center">
-          <!-- You can put any information here -->
+          
           <p>Feel free to contact me through <a href="https://www.linkedin.com/in/robert-french-teal-mango/">LinkedIn</a>. </p>
             <p>I can also be contacted through my email, <a href="mailto:frenchrobertm@outlook.com">frenchrobertm@outlook.com</a>.</p>
         </div>
-        <!-- Modal footer with a close button -->
+        
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-
-  <dialog>
-    <h1>dialog header</h1>
-    <p>dialog paragraph</p>
-    <form method="dialog">
-      <button>Close</button>
-    </form>
-  </dialog>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- RTL/LTR Auto-Detection Script -->
