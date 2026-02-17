@@ -44,7 +44,15 @@
         "content": "I am creating a GUI system update application for Bazzite. It has full SDL3 controller support and will allow updating, rebasing, and rolling back updates.",
         "category": "Personal Project",
         "link": "https://github.com/rfrench3/bazzite_updater",
-        "start_Myyyy": "Dec2026",
+        "start_Myyyy": "Dec2025",
+        "end_Myyyy": ""
+    },
+    {
+        "title": "Portfolio Site",
+        "content": "This website was created using React and NextJS. It was ",
+        "category": "Personal Project",
+        "link": "https://github.com/rfrench3/personal-site",
+        "start_Myyyy": "Feb2026",
         "end_Myyyy": ""
     }
 ]

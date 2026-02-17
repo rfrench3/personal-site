@@ -1,5 +1,9 @@
 [
     {
+        "title": "React",
+        "content": "This website was created using NextJS and React."
+    },
+    {
         "title": "C++",
         "content": "I have created a GUI application using C++ and Qt frameworks."
     },
