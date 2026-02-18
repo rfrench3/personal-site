@@ -54,9 +54,9 @@ function Navbar() {
 function Main() {
   return (
     <main>
-      <Section title="Projects" json_name="projects.json"/>
-      <Section title="Skills" json_name="skills.json"/>
-      <Section title="Education" json_name="education.json"/>
+      <Section title="Projects" json_name="/projects.json"/>
+      <Section title="Skills" json_name="/skills.json"/>
+      <Section title="Education" json_name="/education.json"/>
     </main>
   )
 }
