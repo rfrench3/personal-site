@@ -1,0 +1,38 @@
+.bg-primary {
+  background-color: #2769a7 !important;
+}
+
+.bg-darken-sm {
+  background-color: #00000016 !important;
+}
+
+.bg-lighten-sm {
+  background-color: #ffffff16 !important;
+}
+
+.btn-darken:not(:hover) {
+  background-color: #00000016 !important;
+}
+
+.header-text {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-text:hover {
+  color: #00d9ff;
+}
+
+.card {
+  background: whitesmoke;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+a .card:hover {
+  background: #e3f2fd;
+}
