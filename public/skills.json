@@ -1,46 +1,57 @@
 [
-    {
-        "title": "React",
-        "content": "This website was created using NextJS and React."
-    },
-    {
-        "title": "C++",
-        "content": "I have created a GUI application using C++ and Qt frameworks."
-    },
-    {
-        "title": "Python",
-        "content": "I have made a fully-functional GUI application using Python."
-    },
-    {
-        "title": "HTML",
-        "content": "I have constructed a wide variety of HTML-based websites for personal projects as well as the Global Career Accelerator."
-    },
-    {
-        "title": "CSS",
-        "content": "I am familiar with CSS and can use it to create visually appealing websites, capable of running well even on low-end mobile hardware."
-    },
-    {
-        "title": "Bootstrap-CSS",
-        "content": "I am able to use Bootstrap-CSS to make mobile-first websites that look and feel excellent on all screens, from small phones to large televisions."
-    },
-    {
-        "title": "Linux",
-        "content": "I am familiar with Linux from heavy personal usage, and can effectively troubleshoot and work with it."
-    },
-    {
-        "title": "Qt",
-        "content": "I use Qt to develop helpful lightweight applications for the desktop Linux ecosystem."
-    },
-    {
-        "title": "3D Printing",
-        "content": "I am familiar with the process of 3d printing, from brainstorming the design to making the final print."
-    },
-    {
-        "title": "Teamwork",
-        "content": "I work very well in small teams. I fulfill my role and help encourage others to do the same."
-    },
-    {
-        "title": "CAD Software",
-        "content": "I can design and create 3d models using CAD software such as AutoDesk TinkerCAD."
-    }
+  {
+    "title": "React",
+    "content": "",
+    "subtext": "Portfolio website"
+  },
+  {
+    "title": "C++",
+    "content": "",
+    "subtext": "Bazzite Updater"
+  },
+  {
+    "title": "Python",
+    "content": "",
+    "subtext": "Scopebuddy GUI"
+  },
+  {
+    "title": "HTML",
+    "content": "I have constructed a wide variety of HTML-based websites for personal projects as well as the Global Career Accelerator.",
+    "subtext": ""
+  },
+  {
+    "title": "CSS",
+    "content": "I am familiar with CSS and can use it to create visually appealing websites, capable of running well even on low-end mobile hardware.",
+    "subtext": ""
+  },
+  {
+    "title": "Bootstrap-CSS",
+    "content": "I am able to use Bootstrap-CSS to make mobile-first websites that look and feel excellent on all screens, from small phones to large televisions.",
+    "subtext": ""
+  },
+  {
+    "title": "Linux",
+    "content": "I am familiar with Linux from heavy personal usage, and can effectively troubleshoot and work with it.",
+    "subtext": "Scopebuddy GUI, Bazzite Updater"
+  },
+  {
+    "title": "Qt",
+    "content": "I use Qt to develop helpful lightweight applications for the desktop Linux ecosystem.",
+    "subtext": "Scopebuddy GUI, Bazzite Updater"
+  },
+  {
+    "title": "3D Printing",
+    "content": "I am familiar with the process of 3d printing, from brainstorming the design to making the final print.",
+    "subtext": "Arduino Robot"
+  },
+  {
+    "title": "Teamwork",
+    "content": "I work very well in small teams. I fulfill my role and help encourage others to do the same.",
+    "subtext": "Arduino Robot, Hackjam"
+  },
+  {
+    "title": "CAD Software",
+    "content": "I can design and create 3d models using CAD software such as AutoDesk TinkerCAD.",
+    "subtext": "Arduino Robot"
+  }
 ]

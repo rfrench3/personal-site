@@ -1,21 +1,39 @@
 import Card from 'react-bootstrap/Card';
 
-export function ContentCard({title, content, link="", image_url=""}) {
+export function ContentCard({title, content, subtext="", link="", image_url=""}) {
 
   let image = <></>;
   if (image_url)
     image = <Card.Img variant="top" src={image_url} />;
 
-  const cardContent = (
-  <Card className='h-100 bg-light'>
-    {image}
-    <Card.Body>
-      <Card.Title>{title}</Card.Title>
+  let contentSection = <></>;
+  if (content)
+    contentSection = (
       <Card.Text>
         {content}
       </Card.Text>
-    </Card.Body>
-  </Card>
+    );
+
+  let subtextSection = <></>;
+  if (subtext) {
+    subtextSection = (
+      <Card.Text className='text-muted mt-auto fst-italic'>
+        {subtext}
+      </Card.Text>
+    );
+  }
+
+  const cardContent = (
+  <>
+    <Card className='h-100'>
+      {image}
+      <Card.Body className='d-flex flex-column'>
+        <Card.Title>{title}</Card.Title>
+        {contentSection}
+        {subtextSection}
+      </Card.Body>
+    </Card>
+  </>
   );
 
   if (link)

@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './globals.css'
+
 export const metadata = {
   title: 'Robert French',
   description: 'Portfolio website',
@@ -15,12 +18,6 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link 
-          id="bootstrap-css" 
-          rel="stylesheet" 
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        />
-        <link rel="stylesheet" href="/style.css" />
       </head>
       <body>
         {children}

@@ -31,6 +31,7 @@ export default function Section({title, json_name}) {
               <Card 
                 title={entry.title} 
                 content={entry.content}
+                subtext={entry.subtext}
                 link={entry.link}
                 image_url={entry.image_url}
               />

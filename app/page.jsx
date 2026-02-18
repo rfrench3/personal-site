@@ -27,10 +27,10 @@ function Header() {
         <img src="/img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" />
 
         <div className='px-4'>
-          <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none text-white">
+          <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none header-text">
             <h2>Robert French</h2>
             <h2>App and Web Developer</h2>
-            <p>Responsive and accessible design</p>
+            <p className='fs-5'>Responsive and accessible design</p>
           </a>
         </div>
 
@@ -43,10 +43,10 @@ function Header() {
 
 function Navbar() {
   return (
-  <nav className="col bg-secondary mb-4 py-2">
-    <a href="#projects" className="btn btn-outline-dark bg-info ms-2 me-2">Projects</a>
-    <a href="#skills" className="btn btn-outline-dark bg-info ms-2 me-2">Skills</a>
-    <a href="#education" className="btn btn-outline-dark bg-info ms-2 me-2">Education</a>
+  <nav className="col bg-darken-sm mb-4 py-2">
+    <a href="#projects" className="btn btn-outline-light bg-info ms-2 me-2 btn-darken fs-5">Projects</a>
+    <a href="#skills" className="btn btn-outline-light bg-info ms-2 me-2 btn-darken fs-5">Skills</a>
+    <a href="#education" className="btn btn-outline-light bg-info ms-2 me-2 btn-darken fs-5">Education</a>
   </nav>
   );
 }
