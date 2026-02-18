@@ -24,7 +24,7 @@ function Header() {
       <div className="md-4 d-flex flex-column flex-md-row align-items-center justify-content-center py-2">
 
         <style>{"img {  max-width: 12rem;border-radius: 50%;box-shadow: 0 2px 8px rgba(0,0,0,0.50);}"}</style>
-        <img src="/img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" />
+        <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" />
 
         <div className='px-4'>
           <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none header-text">
@@ -54,9 +54,9 @@ function Navbar() {
 function Main() {
   return (
     <main>
-      <Section title="Projects" json_name="/projects.json"/>
-      <Section title="Skills" json_name="/skills.json"/>
-      <Section title="Education" json_name="/education.json"/>
+      <Section title="Projects" json_name="projects.json"/>
+      <Section title="Skills" json_name="skills.json"/>
+      <Section title="Education" json_name="education.json"/>
     </main>
   )
 }
