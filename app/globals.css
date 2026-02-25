@@ -1,5 +1,22 @@
+:root {
+  color-scheme: light dark;
+  --highlights: light-dark(aqua, #5badbc);
+  --bg-main: light-dark(white, rgb(20, 20, 20));
+  --text-main: light-dark(black, white);
+  --text-main-inv: light-dark(white, black);
+  --text-main-light: black;
+  --text-muted: light-dark(var(--bs-secondary-color), rgb(180, 180, 180));
+  --text-muted-inv: light-dark(rgb(180, 180, 180), var(--bs-secondary-color));
+  --text-muted-light: var(--bs-secondary-color);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
 .bg-primary {
-  background-color: #2769a7 !important;
+  background-color: light-dark(#2769a7, rgb(40, 40, 40)) !important;
 }
 
 .bg-darken-sm {
@@ -14,6 +31,11 @@
   background-color: #00000016 !important;
 }
 
+.btn-darken:hover {
+  background-color: var(--highlights) !important;
+  border-color: var(--highlights) !important;
+}
+
 .header-text {
   color: white;
   text-decoration: none;
@@ -21,18 +43,70 @@
 }
 
 .header-text:hover {
-  color: #00d9ff;
+  color: var(--highlights);
+}
+
+#header-img {  
+  max-width: 12rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.50);
 }
 
 .card {
-  background: whitesmoke;
+  background: light-dark(whitesmoke, rgb(50, 50, 50));
   transition: 0.2s;
+  color: var(--text-main);
 }
 
 .card:hover {
   transform: scale(1.05);
+  background: var(--highlights);
+}
+
+/* The text only needs to be inverted for visibility in dark mode */
+@media (prefers-color-scheme: dark) {
+  .card:hover {
+    color: var(--text-main-inv);
+  }
+
+  .card:hover .text-muted {
+    color: var(--text-muted-inv) !important;
+  }
 }
 
 a .card:hover {
-  background: #e3f2fd;
+  background: var(--highlights);
+}
+
+.card .text-muted {
+  color: var(--text-muted) !important;
+}
+
+footer {
+  background-color: light-dark(#f8f9fa, rgb(40, 40, 40));
+  --bs-border-color: light-dark(inherit, rgba(255, 255, 255, 0.25));
+}
+
+footer .text-muted {
+  color: var(--text-muted) !important;
+}
+
+.modal .modal-content {
+  background-color: light-dark(white, rgb(50, 50, 50));
+  color: var(--text-main);
+  border-color: light-dark(var(--bs-border-color), rgba(255, 255, 255, 0.25));
+}
+
+.modal .modal-header,
+.modal .modal-footer {
+  border-color: light-dark(var(--bs-border-color), rgba(255, 255, 255, 0.25));
+}
+
+.modal .text-muted,
+.modal-footer .text-muted {
+  color: var(--text-muted) !important;
+}
+
+.modal .btn-close {
+  filter: light-dark(none, invert(1));
 }

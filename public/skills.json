@@ -1,33 +1,38 @@
 [
   {
+    "title": "Cloudflare",
+    "content": "I have used Cloudflare workers to connect to the OpenAI API and use Cloudflare to host this website's domain.",
+    "subtext": "Portfolio website, GCA Secure AI Assistant"
+  },
+  {
     "title": "React",
-    "content": "",
+    "content": "I used React to greatly clean up the code for my portfolio website. I then used it to vastly improve the site!",
     "subtext": "Portfolio website"
   },
   {
     "title": "C++",
-    "content": "",
+    "content": "I am using C++ to develop applications for the Linux desktop.",
     "subtext": "Bazzite Updater"
   },
   {
     "title": "Python",
-    "content": "",
+    "content": "I have used Python to develop applications for the Linux desktop.",
     "subtext": "Scopebuddy GUI"
   },
   {
     "title": "HTML",
     "content": "I have constructed a wide variety of HTML-based websites for personal projects as well as the Global Career Accelerator.",
-    "subtext": ""
+    "subtext": "Web projects, Global Career Accelerator"
   },
   {
     "title": "CSS",
     "content": "I am familiar with CSS and can use it to create visually appealing websites, capable of running well even on low-end mobile hardware.",
-    "subtext": ""
+    "subtext": "Web projects, Global Career Accelerator"
   },
   {
     "title": "Bootstrap-CSS",
     "content": "I am able to use Bootstrap-CSS to make mobile-first websites that look and feel excellent on all screens, from small phones to large televisions.",
-    "subtext": ""
+    "subtext": "Web projects, Global Career Accelerator"
   },
   {
     "title": "Linux",

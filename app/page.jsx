@@ -1,8 +1,5 @@
 'use client'
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 
@@ -23,11 +20,10 @@ function Header() {
     <header className="text-center bg-primary">
       <div className="md-4 d-flex flex-column flex-md-row align-items-center justify-content-center py-2">
 
-        <style>{"img {  max-width: 12rem;border-radius: 50%;box-shadow: 0 2px 8px rgba(0,0,0,0.50);}"}</style>
-        <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" />
+        <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" id='header-img'/>
 
         <div className='px-4'>
-          <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none header-text">
+          <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none header-text" target="_blank" rel="noopener noreferrer">
             <h2>Robert French</h2>
             <h2>App and Web Developer</h2>
             <p className='fs-5'>Responsive and accessible design</p>
@@ -63,14 +59,14 @@ function Main() {
 
 function Footer() {
   return (
-    <footer className="bg-light border-top py-4 mt-5">
+    <footer className="border-top py-4 mt-5">
     <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div className="mb-2 mb-md-0 text-muted small">
         <a href="#" className="text-decoration-none text-muted mx-2 btn">Return to top</a>
       </div>
       <nav>
-        <a href="https://github.com/rfrench3" className="text-decoration-none text-muted mx-2 btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none text-muted mx-2 btn">LinkedIn</a>
+        <a href="https://github.com/rfrench3" className="text-decoration-none text-muted mx-2 btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none text-muted mx-2 btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <ContactModal />
       </nav>
     </div>
@@ -90,12 +86,12 @@ function ContactModal() {
         Contact
       </button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} className='modal' centered>
         <Modal.Header closeButton>
           <Modal.Title>Contact Information</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Feel free to contact me through <a href="https://www.linkedin.com/in/robert-french-teal-mango/">LinkedIn</a>.</p>
+          <p>Feel free to contact me through <a href="https://www.linkedin.com/in/robert-french-teal-mango/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
           <p>I can also be contacted through my email, <a href="mailto:frenchrobertm@outlook.com">frenchrobertm@outlook.com</a>.</p>
         </Modal.Body>
       </Modal>
