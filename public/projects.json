@@ -14,6 +14,7 @@
     "subtext": "C++, QtQuick, Linux",
     "category": "Personal Project",
     "link": "https://github.com/rfrench3/bazzite_updater",
+    "image_url":"img/bazzite-updater.png",
     "start_Myyyy": "Dec2025",
     "end_Myyyy": ""
   },
@@ -23,6 +24,7 @@
     "subtext": "HTML, CSS, JS",
     "category": "University of South Florida",
     "link": "https://devpost.com/software/hackjam-2025-scottish-travel-portal",
+    "image_url":"img/hackjam-2025.png",
     "start_Myyyy": "Nov2025",
     "end_Myyyy": "Nov2025"
   },
@@ -32,6 +34,7 @@
     "subtext": "Bootstrap, Cloudflare",
     "category": "Global Career Accelerator",
     "link": "https://rfrench3.github.io/08-prj-loreal-chatbot/",
+    "image_url":"img/loreal-chatbot.png",
     "start_Myyyy": "Jul2025",
     "end_Myyyy": "Jul2025"
   },
@@ -51,7 +54,7 @@
     "subtext": "Python, QtWidgets, Linux",
     "category": "Personal Project",
     "link": "https://github.com/rfrench3/scopebuddy-gui",
-    "image_url":"img/scopebuddy-gui.svg",
+    "image_url":"img/scopebuddy-gui.avif",
     "start_Myyyy": "Jun2025",
     "end_Myyyy": ""
   },
@@ -61,6 +64,7 @@
     "subtext": "CAD, 3D Printing, wiring",
     "category": "University of South Florida",
     "link": "",
+    "image_url":"img/arduino-robot.png",
     "start_Myyyy": "Dec2024",
     "end_Myyyy": "Dec2024"
   }

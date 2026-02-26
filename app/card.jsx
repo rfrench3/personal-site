@@ -8,12 +8,17 @@ export function ContentCard({ title, content, subtext = "", link = "", image_url
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const handleImageOpen = (e) => { e.stopPropagation(); setShowImage(true); };
+  const handleImageOpen = () => setShowImage(true);
   const handleImageClose = () => setShowImage(false);
 
   return (
     <>
-      <div onClick={handleShow} style={{ cursor: 'pointer' }} className='h-100'>
+      <button
+        type="button"
+        onClick={handleShow}
+        className='h-100 w-100 p-0 border-0 bg-transparent text-start'
+        aria-label={`Open details for ${title}`}
+      >
         <Card className='h-100'>
           <Card.Body className='d-flex flex-column'>
             <Card.Title>{title}</Card.Title>
@@ -21,7 +26,7 @@ export function ContentCard({ title, content, subtext = "", link = "", image_url
             {subtext && <Card.Text className='text-muted mt-auto fst-italic'>{subtext}</Card.Text>}
           </Card.Body>
         </Card>
-      </div>
+      </button>
 
       <Modal show={show} onHide={handleClose} className='modal' centered>
         <Modal.Header closeButton>
@@ -33,12 +38,18 @@ export function ContentCard({ title, content, subtext = "", link = "", image_url
         </Modal.Body>
         {image_url && (
           <div style={{ backgroundColor: 'rgba(20, 20, 20, 0.2)', display: 'flex', justifyContent: 'center', overflow: 'hidden' }}>
-            <img
-              src={image_url}
-              alt={title}
+            <button
+              type="button"
               onClick={handleImageOpen}
-              style={{ maxHeight: '16rem', display: 'block', cursor: 'zoom-in' }}
-            />
+              className='p-0 border-0 bg-transparent'
+              aria-label={`Open full-size image for ${title}`}
+            >
+              <img
+                src={image_url}
+                alt={title}
+                style={{ maxHeight: '16rem', display: 'block', cursor: 'zoom-in' }}
+              />
+            </button>
           </div>
         )}
         {link && (

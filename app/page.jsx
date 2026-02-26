@@ -20,10 +20,21 @@ function Header() {
     <header className="text-center bg-primary">
       <div className="md-4 d-flex flex-column flex-md-row align-items-center justify-content-center py-2">
 
-        <img src="img/me_square.jpg" alt="Robert French, a close-up of me smiling at the camera" id='header-img'/>
+        <picture>
+          <source srcSet="img/me-square-192.webp 1x, img/me-square-384.webp 2x" type="image/webp" />
+          <img
+            src="img/me-square.webp"
+            alt="Robert French, a close-up of me smiling at the camera"
+            width="192"
+            height="192"
+            loading="eager"
+            decoding="sync"
+            id='header-img'
+          />
+        </picture>
 
         <div className='px-4'>
-          <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none header-text" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/robert-french-teal-mango/" id="header-text" className="text-decoration-none" target="_blank" rel="noopener noreferrer">
             <h2>Robert French</h2>
             <h2>App and Web Developer</h2>
             <p className='fs-5'>Responsive and accessible design</p>
@@ -58,11 +69,18 @@ function Main() {
 }
 
 function Footer() {
+
+  // used for tab navigation
+  const handleReturnToTop = (e) => {
+    e.preventDefault();
+    document.getElementById('header-text')?.focus();
+  };
+
   return (
     <footer className="border-top py-4 mt-5">
     <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div className="mb-2 mb-md-0 text-muted small">
-        <a href="#" className="text-decoration-none text-muted mx-2 btn">Return to top</a>
+        <a href="#" onClick={handleReturnToTop} className="text-decoration-none text-muted mx-2 btn">Return to top</a>
       </div>
       <nav>
         <a href="https://github.com/rfrench3" className="text-decoration-none text-muted mx-2 btn" target="_blank" rel="noopener noreferrer">GitHub</a>

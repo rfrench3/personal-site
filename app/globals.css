@@ -19,30 +19,27 @@ body {
   background-color: light-dark(#2769a7, rgb(40, 40, 40)) !important;
 }
 
-.bg-darken-sm {
-  background-color: #00000016 !important;
-}
-
 .bg-lighten-sm {
   background-color: #ffffff16 !important;
 }
 
+.bg-darken-sm,
 .btn-darken:not(:hover) {
   background-color: #00000016 !important;
 }
 
-.btn-darken:hover {
+:is(.btn-darken:hover, .btn-darken:focus-visible) {
   background-color: var(--highlights) !important;
   border-color: var(--highlights) !important;
 }
 
-.header-text {
+#header-text {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.header-text:hover {
+:is(#header-text:hover, #header-text:focus-visible) {
   color: var(--highlights);
 }
 
@@ -58,37 +55,25 @@ body {
   color: var(--text-main);
 }
 
-.card:hover {
+:is(.card:hover, button:focus-visible .card) {
   transform: scale(1.05);
   background: var(--highlights);
 }
 
 /* The text only needs to be inverted for visibility in dark mode */
 @media (prefers-color-scheme: dark) {
-  .card:hover {
+  :is(.card:hover, button:focus-visible .card) {
     color: var(--text-main-inv);
   }
 
-  .card:hover .text-muted {
+  :is(.card:hover, button:focus-visible .card) .text-muted {
     color: var(--text-muted-inv) !important;
   }
-}
-
-a .card:hover {
-  background: var(--highlights);
-}
-
-.card .text-muted {
-  color: var(--text-muted) !important;
 }
 
 footer {
   background-color: light-dark(#f8f9fa, rgb(40, 40, 40));
   --bs-border-color: light-dark(inherit, rgba(255, 255, 255, 0.25));
-}
-
-footer .text-muted {
-  color: var(--text-muted) !important;
 }
 
 .modal .modal-content {
@@ -102,9 +87,17 @@ footer .text-muted {
   border-color: light-dark(var(--bs-border-color), rgba(255, 255, 255, 0.25));
 }
 
+.card .text-muted,
+footer .text-muted,
 .modal .text-muted,
 .modal-footer .text-muted {
   color: var(--text-muted) !important;
+}
+
+:is(a.text-muted, button.text-muted, .btn.text-muted):focus-visible {
+  outline: 2px solid var(--highlights);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
 }
 
 .modal .btn-close {
