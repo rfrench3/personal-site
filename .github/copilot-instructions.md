@@ -1,1 +1,0 @@
-Output the simplest, beginner-friendly code possible.

@@ -1,8 +1,8 @@
 default:
-  just --list
+    just --list
 
 run-localhost:
-  npm run dev
+    npm run dev
 
 install-dependencies:
-  npm install react@latest react-dom@latest next@latest
+    npm clean-install

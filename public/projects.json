@@ -10,11 +10,11 @@
   },
   {
     "title": "Bazzite Updater",
-    "content": "I am creating a GUI system update application for Bazzite. It has full SDL3 controller support and will allow updating, rebasing, and rolling back updates.",
+    "content": "I am creating a GUI system update application for Linux. It fully supports controllers, allows distributors and end users to configure its \"Update\" and \"Rollback\" commands, and supports RSS-based changelogs.",
     "subtext": "C++, QtQuick, Linux",
     "category": "Personal Project",
-    "link": "https://github.com/rfrench3/bazzite_updater",
-    "image_url":"img/bazzite-updater.png",
+    "link": "https://github.com/rfrench3/bazzite-updater",
+    "image_url": "img/bazzite-updater.png",
     "start_Myyyy": "Dec2025",
     "end_Myyyy": ""
   },
@@ -24,7 +24,7 @@
     "subtext": "HTML, CSS, JS",
     "category": "University of South Florida",
     "link": "https://devpost.com/software/hackjam-2025-scottish-travel-portal",
-    "image_url":"img/hackjam-2025.png",
+    "image_url": "img/hackjam-2025.png",
     "start_Myyyy": "Nov2025",
     "end_Myyyy": "Nov2025"
   },
@@ -34,7 +34,7 @@
     "subtext": "Bootstrap, Cloudflare",
     "category": "Global Career Accelerator",
     "link": "https://rfrench3.github.io/08-prj-loreal-chatbot/",
-    "image_url":"img/loreal-chatbot.png",
+    "image_url": "img/loreal-chatbot.png",
     "start_Myyyy": "Jul2025",
     "end_Myyyy": "Jul2025"
   },
@@ -44,7 +44,7 @@
     "subtext": "Bootstrap",
     "category": "Global Career Accelerator",
     "link": "https://rfrench3.github.io/03-prj-intel-localization/",
-    "image_url":"img/intel-timeline.webp",
+    "image_url": "img/intel-timeline.webp",
     "start_Myyyy": "Jul2025",
     "end_Myyyy": "Jul2025"
   },
@@ -54,7 +54,7 @@
     "subtext": "Python, QtWidgets, Linux",
     "category": "Personal Project",
     "link": "https://github.com/rfrench3/scopebuddy-gui",
-    "image_url":"img/scopebuddy-gui.avif",
+    "image_url": "img/scopebuddy-gui.avif",
     "start_Myyyy": "Jun2025",
     "end_Myyyy": ""
   },
@@ -64,7 +64,7 @@
     "subtext": "CAD, 3D Printing, wiring",
     "category": "University of South Florida",
     "link": "",
-    "image_url":"img/arduino-robot.png",
+    "image_url": "img/arduino-robot.png",
     "start_Myyyy": "Dec2024",
     "end_Myyyy": "Dec2024"
   }

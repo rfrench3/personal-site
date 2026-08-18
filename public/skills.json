@@ -1,11 +1,26 @@
 [
   {
+    "title": "OAuth2 API Integrations",
+    "content": "I implemented the full OAuth2 process to allow users to easily sign in through their Canvas LMS accout.",
+    "subtext": "OPS Student Assistant at USF"
+  },
+  {
+    "title": "Docker/Podman",
+    "content": "I have experience with building OCI containers (used by Docker and Podman) with existing web servers to get them running in a highly reproducible, scalable, and stable environment.",
+    "subtext": "OPS Student Assistant at USF"
+  },
+  {
+    "title": "Express.js",
+    "content": "I am experienced with using ExpressJS to setup a server, which allows similar code to be used between a frontend application and its backend server.",
+    "subtext": "OPS Student Assistant at USF"
+  },
+  {
     "title": "Cloudflare",
     "content": "I have used Cloudflare workers to connect to the OpenAI API and use Cloudflare to host this website's domain.",
     "subtext": "Portfolio website, GCA Secure AI Assistant"
   },
   {
-    "title": "React",
+    "title": "React.js",
     "content": "I used React to greatly clean up the code for my portfolio website. I then used it to vastly improve the site!",
     "subtext": "Portfolio website"
   },
