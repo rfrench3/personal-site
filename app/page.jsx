@@ -49,11 +49,12 @@ function Header() {
 }
 
 function Navbar() {
+  const btnClass = "btn btn-outline-light bg-info ms-2 me-2 btn-darken fs-5"
   return (
   <nav className="col bg-darken-sm mb-4 py-2">
-    <a href="#projects" className="btn btn-outline-light bg-info ms-2 me-2 btn-darken fs-5">Projects</a>
-    <a href="#skills" className="btn btn-outline-light bg-info ms-2 me-2 btn-darken fs-5">Skills</a>
-    <a href="#education" className="btn btn-outline-light bg-info ms-2 me-2 btn-darken fs-5">Education</a>
+    <a href="#projects" className={btnClass}>Projects</a>
+    <a href="#skills" className={btnClass}>Skills</a>
+    <a href="#education" className={btnClass}>Education</a>
   </nav>
   );
 }
@@ -68,6 +69,7 @@ function Main() {
   )
 }
 
+const footerBtnClass = "text-decoration-none text-muted mx-2 btn"
 function Footer() {
 
   // used for tab navigation
@@ -76,15 +78,18 @@ function Footer() {
     document.getElementById('header-text')?.focus();
   };
 
+  
+
   return (
     <footer className="border-top py-4 mt-5">
     <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div className="mb-2 mb-md-0 text-muted small">
-        <a href="#" onClick={handleReturnToTop} className="text-decoration-none text-muted mx-2 btn">Return to top</a>
+        <a href="#" onClick={handleReturnToTop} className={footerBtnClass}>Return to top</a>
       </div>
       <nav>
-        <a href="https://github.com/rfrench3" className="text-decoration-none text-muted mx-2 btn" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className="text-decoration-none text-muted mx-2 btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="/RobertFrench_Resume.pdf" target="_blank" className={footerBtnClass}>Resume</a>
+        <a href="https://github.com/rfrench3" className={footerBtnClass} target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/robert-french-teal-mango/" className={footerBtnClass} target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <ContactModal />
       </nav>
     </div>
@@ -100,7 +105,7 @@ function ContactModal() {
 
   return (
     <>
-      <button className="text-decoration-none text-muted mx-2 btn" onClick={handleShow}>
+      <button className={footerBtnClass} onClick={handleShow}>
         Contact
       </button>
 
