@@ -55,6 +55,8 @@ function Navbar() {
     <a href="#projects" className={btnClass}>Projects</a>
     <a href="#skills" className={btnClass}>Skills</a>
     <a href="#education" className={btnClass}>Education</a>
+    <div className="vr align-middle mx-1" />
+    <a href="/RobertFrench_Resume.pdf" className={btnClass}>Resume</a>
   </nav>
   );
 }

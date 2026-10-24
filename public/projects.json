@@ -10,7 +10,7 @@
   },
   {
     "title": "Bazzite Updater",
-    "content": "I am creating a GUI system update application for Linux. It fully supports controllers, allows distributors and end users to configure its \"Update\" and \"Rollback\" commands, and supports RSS-based changelogs.",
+    "content": "I am developing the GUI system update application used by Bazzite. It fully supports controllers, allows distributors and end users to configure its \"Update\" and \"Rollback\" commands, and supports RSS-based changelogs. It also has support for translations.",
     "subtext": "C++, QtQuick, Linux",
     "category": "Personal Project",
     "link": "https://github.com/rfrench3/bazzite-updater",
